@@ -1,0 +1,37 @@
+{
+  "item.minecraft.potion.effect.wither_potion": "Potion of Decay",
+  "item.minecraft.splash_potion.effect.wither_potion": "Splash Potion of Decay",
+  "item.minecraft.lingering_potion.effect.wither_potion": "Lingering Potion of Decay",
+
+  "item.minecraft.potion.effect.long_wither_potion": "Potion of Decay",
+  "item.minecraft.splash_potion.effect.long_wither_potion": "Splash Potion of Decay",
+  "item.minecraft.lingering_potion.effect.long_wither_potion": "Lingering Potion of Decay",
+
+  "item.minecraft.potion.effect.strong_wither_potion": "Potion of Decay",
+  "item.minecraft.splash_potion.effect.strong_wither_potion": "Splash Potion of Decay",
+  "item.minecraft.lingering_potion.effect.strong_wither_potion": "Lingering Potion of Decay",
+
+  "item.minecraft.potion.effect.hp_boost_potion": "Potion of Vitality",
+  "item.minecraft.splash_potion.effect.hp_boost_potion": "Splash Potion of Vitality",
+  "item.minecraft.lingering_potion.effect.hp_boost_potion": "Lingering Potion of Vitality",
+
+  "item.minecraft.potion.effect.long_hp_boost_potion": "Potion of Vitality",
+  "item.minecraft.splash_potion.effect.long_hp_boost_potion": "Splash Potion of Vitality",
+  "item.minecraft.lingering_potion.effect.long_hp_boost_potion": "Lingering Potion of Vitality",
+
+  "item.minecraft.potion.effect.strong_hp_boost_potion": "Potion of Vitality",
+  "item.minecraft.splash_potion.effect.strong_hp_boost_potion": "Splash Potion of Vitality",
+  "item.minecraft.lingering_potion.effect.strong_hp_boost_potion": "Lingering Potion of Vitality",
+
+  "item.minecraft.tipped_arrow.effect.strong_hp_boost_potion": "Arrow of Vitality",
+  "item.minecraft.tipped_arrow.effect.hp_boost_potion": "Arrow of Vitality",
+  "item.minecraft.tipped_arrow.effect.long_hp_boost_potion": "Arrow of Vitality",
+
+  "item.minecraft.tipped_arrow.effect.strong_wither_potion": "Arrow of Decay",
+  "item.minecraft.tipped_arrow.effect.long_wither_potion": "Arrow of Decay",
+  "item.minecraft.tipped_arrow.effect.wither_potion": "Arrow of Decay",
+
+  "item.threepotions.wither_bone": "Wither Skeleton Bone",
+  "item.threepotions.red_crystals": "Red Prismarine Crystals",
+  "item.threepotions.clover": "Four Leaf Clover"
+}
