@@ -3,17 +3,19 @@
   "id": "threepotions",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Three Potions",
   "description": "Adds health boost and wither potion and possibility of crafting luck potion",
   "authors": [
     "Wookash Fryc"
   ],
   "contact": {
-    "email": "frycmod@gmail.com"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/three-potions",
+    "sources": "https://github.com/Xires87/threepotions",
+    "issues": "https://github.com/Xires87/threepotions/issues"
   },
 
   "license": "MIT",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/threepotions/textures/item/clover.png",
 
   "environment": "*",
   "entrypoints": {

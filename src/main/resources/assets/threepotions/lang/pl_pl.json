@@ -1,0 +1,37 @@
+{
+  "item.minecraft.potion.effect.wither_potion": "Mikstura Rozkładu",
+  "item.minecraft.splash_potion.effect.wither_potion": "Miotana Mikstura Rozkładu",
+  "item.minecraft.lingering_potion.effect.wither_potion": "Trwała Mikstura Rozkładu",
+
+  "item.minecraft.potion.effect.long_wither_potion": "Mikstura Rozkładu",
+  "item.minecraft.splash_potion.effect.long_wither_potion": "Miotana Mikstura Rozkładu",
+  "item.minecraft.lingering_potion.effect.long_wither_potion": "Trwała Mikstura Rozkładu",
+
+  "item.minecraft.potion.effect.strong_wither_potion": "Mikstura Rozkładu",
+  "item.minecraft.splash_potion.effect.strong_wither_potion": "Miotana Mikstura Rozkładu",
+  "item.minecraft.lingering_potion.effect.strong_wither_potion": "Trwała Mikstura Rozkładu",
+
+  "item.minecraft.potion.effect.hp_boost_potion": "Mikstura Witalności",
+  "item.minecraft.splash_potion.effect.hp_boost_potion": "Miotana Mikstura Witalności",
+  "item.minecraft.lingering_potion.effect.hp_boost_potion": "Trwała Mikstura Witalności",
+
+  "item.minecraft.potion.effect.long_hp_boost_potion": "Mikstura Witalności",
+  "item.minecraft.splash_potion.effect.long_hp_boost_potion": "Miotana Mikstura Witalności",
+  "item.minecraft.lingering_potion.effect.long_hp_boost_potion": "Trwała Mikstura Witalności",
+
+  "item.minecraft.potion.effect.strong_hp_boost_potion": "Mikstura Witalności",
+  "item.minecraft.splash_potion.effect.strong_hp_boost_potion": "Miotana Mikstura Witalności",
+  "item.minecraft.lingering_potion.effect.strong_hp_boost_potion": "Trwała Mikstura Witalności",
+
+  "item.minecraft.tipped_arrow.effect.strong_hp_boost_potion": "Strzała Witalności",
+  "item.minecraft.tipped_arrow.effect.hp_boost_potion": "Strzała Witalności",
+  "item.minecraft.tipped_arrow.effect.long_hp_boost_potion": "Strzała Witalności",
+
+  "item.minecraft.tipped_arrow.effect.strong_wither_potion": "Strzała Rozkładu",
+  "item.minecraft.tipped_arrow.effect.long_wither_potion": "Strzała Rozkładu",
+  "item.minecraft.tipped_arrow.effect.wither_potion": "Strzała Rozkładu",
+
+  "item.threepotions.wither_bone": "Kość Witherowego Szkieleta",
+  "item.threepotions.red_crystals": "Czerwone Kryształy Pryzmarynu",
+  "item.threepotions.clover": "Czterolistna Koniczyna"
+}
