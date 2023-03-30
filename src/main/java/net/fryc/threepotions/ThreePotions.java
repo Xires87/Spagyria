@@ -26,7 +26,7 @@ public class ThreePotions implements ModInitializer {
 		ItemGroup THREE_POTIONS = FabricItemGroup.builder(new Identifier(MOD_ID, "three_potions_item_group"))
 				.displayName(Text.literal("Three Potions"))
 				.icon(() -> new ItemStack(ModItems.CLOVER))
-				.entries((enabledFeatures, entries, operatorEnabled) -> {
+				.entries((enabledFeatures, entries) -> {
 					entries.add(ModItems.CLOVER);
 					entries.add(ModItems.WITHER_BONE);
 					entries.add(ModItems.RED_CRYSTALS);
