@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:dragon_head"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "threepotions:ender_dragon_scale"
+  }
+}

@@ -3,14 +3,14 @@
   "id": "threepotions",
   "version": "${version}",
 
-  "name": "Three Potions",
-  "description": "Adds health boost and wither potion and possibility of crafting luck potion",
+  "name": "Spagyria",
+  "description": "Adds potions (and ingredients for them) for most vanilla status effects, that are unobtainable through brewing.",
   "authors": [
     "Wookash Fryc",
     "sheslong (artist)"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/three-potions",
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/spagyria",
     "sources": "https://github.com/Xires87/threepotions",
     "issues": "https://github.com/Xires87/threepotions/issues"
   },
