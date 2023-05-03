@@ -50,7 +50,7 @@ public class ModItems {
         ItemGroup SPAGYRIA = FabricItemGroup.builder(new Identifier(ThreePotions.MOD_ID, "spagyria_item_group"))
                 .displayName(Text.literal("Spagyria"))
                 .icon(() -> new ItemStack(ModItems.CLOVER))
-                .entries((enabledFeatures, entries) -> {
+                .entries((enabledFeatures, entries, operatorEnabled) -> {
                     entries.add(ModItems.CLOVER);
                     entries.add(ModItems.WITHER_BONE);
                     entries.add(ModItems.RED_CRYSTALS);
