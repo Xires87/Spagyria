@@ -36,7 +36,7 @@ public class ModItems {
             new Item(new FabricItemSettings().maxCount(64)));
 
     public static final Item POLAR_BEAR_LIVER = registerItem("polar_bear_liver" ,
-            new Item(new FabricItemSettings().maxCount(64).food(new FoodComponent.Builder().hunger(2).saturationModifier(0.4f).meat().build())));
+            new Item(new FabricItemSettings().maxCount(64).food(new FoodComponent.Builder().hunger(2).saturationModifier(0.4f).meat().statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 300), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.POISON, 100), 0.4f).build())));
 
     public static final Item COOKED_POLAR_BEAR_LIVER = registerItem("cooked_polar_bear_liver" ,
             new Item(new FabricItemSettings().maxCount(64).food(new FoodComponent.Builder().hunger(4).saturationModifier(1.0f).meat().build())));
