@@ -16,5 +16,6 @@ public class ThreePotions implements ModInitializer {
 		ModItems.registerModItems();
 		ModPotions.registerPotions();
 		ModLootTables.modifyLoot();
+
 	}
 }

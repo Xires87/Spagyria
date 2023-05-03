@@ -23,6 +23,165 @@
   "item.minecraft.splash_potion.effect.strong_hp_boost_potion": "Miotana Mikstura Witalności",
   "item.minecraft.lingering_potion.effect.strong_hp_boost_potion": "Trwała Mikstura Witalności",
 
+  "item.minecraft.potion.effect.absorption_potion": "Mikstura Absorpcji",
+  "item.minecraft.splash_potion.effect.absorption_potion": "Miotana Mikstura Absorpcji",
+  "item.minecraft.lingering_potion.effect.absorption_potion": "Trwała Mikstura Absorpcji",
+
+  "item.minecraft.potion.effect.long_absorption_potion": "Mikstura Absorpcji",
+  "item.minecraft.splash_potion.effect.long_absorption_potion": "Miotana Mikstura Absorpcji",
+  "item.minecraft.lingering_potion.effect.long_absorption_potion": "Trwała Mikstura Absorpcji",
+
+  "item.minecraft.potion.effect.strong_absorption_potion": "Mikstura Absorpcji",
+  "item.minecraft.splash_potion.effect.strong_absorption_potion": "Miotana Mikstura Absorpcji",
+  "item.minecraft.lingering_potion.effect.strong_absorption_potion": "Trwała Mikstura Absorpcji",
+
+  "item.minecraft.potion.effect.haste_potion": "Mikstura Pośpiechu",
+  "item.minecraft.splash_potion.effect.haste_potion": "Miotana Mikstura Pośpiechu",
+  "item.minecraft.lingering_potion.effect.haste_potion": "Trwała Mikstura Pośpiechu",
+
+  "item.minecraft.potion.effect.long_haste_potion": "Mikstura Pośpiechu",
+  "item.minecraft.splash_potion.effect.long_haste_potion": "Miotana Mikstura Pośpiechu",
+  "item.minecraft.lingering_potion.effect.long_haste_potion": "Trwała Mikstura Pośpiechu",
+
+  "item.minecraft.potion.effect.strong_haste_potion": "Mikstura Pośpiechu",
+  "item.minecraft.splash_potion.effect.strong_haste_potion": "Miotana Mikstura Pośpiechu",
+  "item.minecraft.lingering_potion.effect.strong_haste_potion": "Trwała Mikstura Pośpiechu",
+
+  "item.minecraft.potion.effect.mining_fatigue_potion": "Mikstura Wyczerpania",
+  "item.minecraft.splash_potion.effect.mining_fatigue_potion": "Miotana Mikstura Wyczerpania",
+  "item.minecraft.lingering_potion.effect.mining_fatigue_potion": "Trwała Mikstura Wyczerpania",
+
+  "item.minecraft.potion.effect.long_mining_fatigue_potion": "Mikstura Wyczerpania",
+  "item.minecraft.splash_potion.effect.long_mining_fatigue_potion": "Miotana Mikstura Wyczerpania",
+  "item.minecraft.lingering_potion.effect.long_mining_fatigue_potion": "Trwała Mikstura Wyczerpania",
+
+  "item.minecraft.potion.effect.strong_mining_fatigue_potion": "Mikstura Wyczerpania",
+  "item.minecraft.splash_potion.effect.strong_mining_fatigue_potion": "Miotana Mikstura Wyczerpania",
+  "item.minecraft.lingering_potion.effect.strong_mining_fatigue_potion": "Trwała Mikstura Wyczerpania",
+
+  "item.minecraft.potion.effect.resistance_potion": "Mikstura Ochrony",
+  "item.minecraft.splash_potion.effect.resistance_potion": "Miotana Mikstura Ochrony",
+  "item.minecraft.lingering_potion.effect.resistance_potion": "Trwała Mikstura Ochrony",
+
+  "item.minecraft.potion.effect.long_resistance_potion": "Mikstura Ochrony",
+  "item.minecraft.splash_potion.effect.long_resistance_potion": "Miotana Mikstura Ochrony",
+  "item.minecraft.lingering_potion.effect.long_resistance_potion": "Trwała Mikstura Ochrony",
+
+  "item.minecraft.potion.effect.strong_resistance_potion": "Mikstura Ochrony",
+  "item.minecraft.splash_potion.effect.strong_resistance_potion": "Miotana Mikstura Ochrony",
+  "item.minecraft.lingering_potion.effect.strong_resistance_potion": "Trwała Mikstura Ochrony",
+
+  "item.minecraft.potion.effect.blindness_potion": "Mikstura Ślepoty",
+  "item.minecraft.splash_potion.effect.blindness_potion": "Miotana Mikstura Ślepoty",
+  "item.minecraft.lingering_potion.effect.blindness_potion": "Trwała Mikstura Ślepoty",
+
+  "item.minecraft.potion.effect.long_blindness_potion": "Mikstura Ślepoty",
+  "item.minecraft.splash_potion.effect.long_blindness_potion": "Miotana Mikstura Ślepoty",
+  "item.minecraft.lingering_potion.effect.long_blindness_potion": "Trwała Mikstura Ślepoty",
+
+  "item.minecraft.potion.effect.dolphins_grace_potion": "Mikstura Wdzięku Delfina",
+  "item.minecraft.splash_potion.effect.dolphins_grace_potion": "Miotana Mikstura Wdzięku Delfina",
+  "item.minecraft.lingering_potion.effect.dolphins_grace_potion": "Trwała Mikstura Wdzięku Delfina",
+
+  "item.minecraft.potion.effect.long_dolphins_grace_potion": "Mikstura Wdzięku Delfina",
+  "item.minecraft.splash_potion.effect.long_dolphins_grace_potion": "Miotana Mikstura Wdzięku Delfina",
+  "item.minecraft.lingering_potion.effect.long_dolphins_grace_potion": "Trwała Mikstura Wdzięku Delfina",
+
+  "item.minecraft.potion.effect.nausea_potion": "Mikstura Choroby",
+  "item.minecraft.splash_potion.effect.nausea_potion": "Miotana Mikstura Choroby",
+  "item.minecraft.lingering_potion.effect.nausea_potion": "Trwała Mikstura Choroby",
+
+  "item.minecraft.potion.effect.long_nausea_potion": "Mikstura Choroby",
+  "item.minecraft.splash_potion.effect.long_nausea_potion": "Miotana Mikstura Choroby",
+  "item.minecraft.lingering_potion.effect.long_nausea_potion": "Trwała Mikstura Choroby",
+
+  "item.minecraft.potion.effect.saturation_potion": "Mikstura Saturacji",
+  "item.minecraft.splash_potion.effect.saturation_potion": "Miotana Mikstura Saturacji",
+  "item.minecraft.lingering_potion.effect.saturation_potion": "Trwała Mikstura Saturacji",
+
+  "item.minecraft.potion.effect.strong_saturation_potion": "Mikstura Saturacji",
+  "item.minecraft.splash_potion.effect.strong_saturation_potion": "Miotana Mikstura Saturacji",
+  "item.minecraft.lingering_potion.effect.strong_saturation_potion": "Trwała Mikstura Saturacji",
+
+  "item.minecraft.potion.effect.hunger_potion": "Mikstura Głodu",
+  "item.minecraft.splash_potion.effect.hunger_potion": "Miotana Mikstura Głodu",
+  "item.minecraft.lingering_potion.effect.hunger_potion": "Trwała Mikstura Głodu",
+
+  "item.minecraft.potion.effect.long_hunger_potion": "Mikstura Głodu",
+  "item.minecraft.splash_potion.effect.long_hunger_potion": "Miotana Mikstura Głodu",
+  "item.minecraft.lingering_potion.effect.long_hunger_potion": "Trwała Mikstura Głodu",
+
+  "item.minecraft.potion.effect.strong_hunger_potion": "Mikstura Głodu",
+  "item.minecraft.splash_potion.effect.strong_hunger_potion": "Miotana Mikstura Głodu",
+  "item.minecraft.lingering_potion.effect.strong_hunger_potion": "Trwała Mikstura Głodu",
+
+  "item.minecraft.potion.effect.bad_luck_potion": "Mikstura Nieszczęścia",
+  "item.minecraft.splash_potion.effect.bad_luck_potion": "Miotana Mikstura Nieszczęścia",
+  "item.minecraft.lingering_potion.effect.bad_luck_potion": "Trwała Mikstura Nieszczęścia",
+
+  "item.minecraft.potion.effect.levitation_potion": "Mikstura Lewitacji",
+  "item.minecraft.splash_potion.effect.levitation_potion": "Miotana Mikstura Lewitacji",
+  "item.minecraft.lingering_potion.effect.levitation_potion": "Trwała Mikstura Lewitacji",
+
+  "item.minecraft.potion.effect.long_levitation_potion": "Mikstura Lewitacji",
+  "item.minecraft.splash_potion.effect.long_levitation_potion": "Miotana Mikstura Lewitacji",
+  "item.minecraft.lingering_potion.effect.long_levitation_potion": "Trwała Mikstura Lewitacji",
+
+  "item.minecraft.potion.effect.glowing_potion": "Mikstura Blasku",
+  "item.minecraft.splash_potion.effect.glowing_potion": "Miotana Mikstura Blasku",
+  "item.minecraft.lingering_potion.effect.glowing_potion": "Trwała Mikstura Blasku",
+
+  "item.minecraft.potion.effect.long_glowing_potion": "Mikstura Blasku",
+  "item.minecraft.splash_potion.effect.long_glowing_potion": "Miotana Mikstura Blasku",
+  "item.minecraft.lingering_potion.effect.long_glowing_potion": "Trwała Mikstura Blasku",
+
+  "item.minecraft.potion.effect.darkness_potion": "Mikstura Cieni",
+  "item.minecraft.splash_potion.effect.darkness_potion": "Miotana Mikstura Cieni",
+  "item.minecraft.lingering_potion.effect.darkness_potion": "Trwała Mikstura Cieni",
+
+  "item.minecraft.potion.effect.long_darkness_potion": "Mikstura Cieni",
+  "item.minecraft.splash_potion.effect.long_darkness_potion": "Miotana Mikstura Cieni",
+  "item.minecraft.lingering_potion.effect.long_darkness_potion": "Trwała Mikstura Cieni",
+
+  "item.minecraft.tipped_arrow.effect.darkness_potion": "Strzała Cieni",
+  "item.minecraft.tipped_arrow.effect.long_darkness_potion": "Strzała Cieni",
+
+  "item.minecraft.tipped_arrow.effect.glowing_potion": "Strzała Blasku",
+  "item.minecraft.tipped_arrow.effect.long_glowing_potion": "Strzała Blasku",
+
+  "item.minecraft.tipped_arrow.effect.levitation_potion": "Strzała Lewitacji",
+  "item.minecraft.tipped_arrow.effect.long_levitation_potion": "Strzała Lewitacji",
+
+  "item.minecraft.tipped_arrow.effect.bad_luck_potion": "Strzała Nieszczęścia",
+
+  "item.minecraft.tipped_arrow.effect.hunger_potion": "Strzała Głodu",
+  "item.minecraft.tipped_arrow.effect.long_hunger_potion": "Strzała Głodu",
+  "item.minecraft.tipped_arrow.effect.strong_hunger_potion": "Strzała Głodu",
+
+  "item.minecraft.tipped_arrow.effect.saturation_potion": "Strzała Saturacji",
+  "item.minecraft.tipped_arrow.effect.strong_saturation_potion": "Strzała Saturacji",
+
+  "item.minecraft.tipped_arrow.effect.nausea_potion": "Strzała Choroby",
+  "item.minecraft.tipped_arrow.effect.long_nausea_potion": "Strzała Choroby",
+
+  "item.minecraft.tipped_arrow.effect.long_dolphins_grace_potion": "Strzała Wdzięku Delfina",
+  "item.minecraft.tipped_arrow.effect.dolphins_grace_potion": "Strzała Wdzięku Delfina",
+
+  "item.minecraft.tipped_arrow.effect.long_blindness_potion": "Strzała Ślepoty",
+  "item.minecraft.tipped_arrow.effect.blindness_potion": "Strzała Ślepoty",
+
+  "item.minecraft.tipped_arrow.effect.resistance_potion": "Strzała Ochrony",
+  "item.minecraft.tipped_arrow.effect.long_resistance_potion": "Strzała Ochrony",
+  "item.minecraft.tipped_arrow.effect.strong_resistance_potion": "Strzała Ochrony",
+
+  "item.minecraft.tipped_arrow.effect.mining_fatigue_potion": "Strzała Wyczerpania",
+  "item.minecraft.tipped_arrow.effect.long_mining_fatigue_potion": "Strzała Wyczerpania",
+  "item.minecraft.tipped_arrow.effect.strong_mining_fatigue_potion": "Strzała Wyczerpania",
+
+  "item.minecraft.tipped_arrow.effect.haste_potion": "Strzała Pośpiechu",
+  "item.minecraft.tipped_arrow.effect.long_haste_potion": "Strzała Pośpiechu",
+  "item.minecraft.tipped_arrow.effect.strong_haste_potion": "Strzała Pośpiechu",
+
   "item.minecraft.tipped_arrow.effect.strong_hp_boost_potion": "Strzała Witalności",
   "item.minecraft.tipped_arrow.effect.hp_boost_potion": "Strzała Witalności",
   "item.minecraft.tipped_arrow.effect.long_hp_boost_potion": "Strzała Witalności",
@@ -31,7 +190,17 @@
   "item.minecraft.tipped_arrow.effect.long_wither_potion": "Strzała Rozkładu",
   "item.minecraft.tipped_arrow.effect.wither_potion": "Strzała Rozkładu",
 
+  "item.minecraft.tipped_arrow.effect.absorption_potion": "Strzała Absorpcji",
+  "item.minecraft.tipped_arrow.effect.long_absorption_potion": "Strzała Absorpcji",
+  "item.minecraft.tipped_arrow.effect.strong_absorption_potion": "Strzała Absorpcji",
+
   "item.threepotions.wither_bone": "Kość Witherowego Szkieleta",
   "item.threepotions.red_crystals": "Czerwone Kryształy Pryzmarynu",
-  "item.threepotions.clover": "Czterolistna Koniczyna"
+  "item.threepotions.clover": "Czterolistna Koniczyna",
+  "item.threepotions.bat_eye": "Oko Nietoperza",
+  "item.threepotions.silverfish_skin": "Skóra Rybika Cukrowego",
+  "item.threepotions.ender_dragon_scale": "Łuska Smoka Endu",
+  "item.threepotions.dolphin_fin": "Płetwa Delfina",
+  "item.threepotions.polar_bear_liver": "Surowa Wątroba Niedźwiedzia Polarnego",
+  "item.threepotions.cooked_polar_bear_liver": "Pieczona Wątroba Niedźwiedzia Polarnego"
 }

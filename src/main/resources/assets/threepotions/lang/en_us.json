@@ -11,6 +11,18 @@
   "item.minecraft.splash_potion.effect.strong_wither_potion": "Splash Potion of Decay",
   "item.minecraft.lingering_potion.effect.strong_wither_potion": "Lingering Potion of Decay",
 
+  "item.minecraft.potion.effect.absorption_potion": "Potion of Absorption",
+  "item.minecraft.splash_potion.effect.absorption_potion": "Splash Potion of Absorption",
+  "item.minecraft.lingering_potion.effect.absorption_potion": "Lingering Potion of Absorption",
+
+  "item.minecraft.potion.effect.long_absorption_potion": "Potion of Absorption",
+  "item.minecraft.splash_potion.effect.long_absorption_potion": "Splash Potion of Absorption",
+  "item.minecraft.lingering_potion.effect.long_absorption_potion": "Lingering Potion of Absorption",
+
+  "item.minecraft.potion.effect.strong_absorption_potion": "Potion of Absorption",
+  "item.minecraft.splash_potion.effect.strong_absorption_potion": "Splash Potion of Absorption",
+  "item.minecraft.lingering_potion.effect.strong_absorption_potion": "Lingering Potion of Absorption",
+
   "item.minecraft.potion.effect.hp_boost_potion": "Potion of Vitality",
   "item.minecraft.splash_potion.effect.hp_boost_potion": "Splash Potion of Vitality",
   "item.minecraft.lingering_potion.effect.hp_boost_potion": "Lingering Potion of Vitality",
@@ -23,9 +35,160 @@
   "item.minecraft.splash_potion.effect.strong_hp_boost_potion": "Splash Potion of Vitality",
   "item.minecraft.lingering_potion.effect.strong_hp_boost_potion": "Lingering Potion of Vitality",
 
+  "item.minecraft.potion.effect.haste_potion": "Potion of Haste",
+  "item.minecraft.splash_potion.effect.haste_potion": "Splash Potion of Haste",
+  "item.minecraft.lingering_potion.effect.haste_potion": "Lingering Potion of Haste",
+
+  "item.minecraft.potion.effect.long_haste_potion": "Potion of Haste",
+  "item.minecraft.splash_potion.effect.long_haste_potion": "Splash Potion of Haste",
+  "item.minecraft.lingering_potion.effect.long_haste_potion": "Lingering Potion of Haste",
+
+  "item.minecraft.potion.effect.strong_haste_potion": "Potion of Haste",
+  "item.minecraft.splash_potion.effect.strong_haste_potion": "Splash Potion of Haste",
+  "item.minecraft.lingering_potion.effect.strong_haste_potion": "Lingering Potion of Haste",
+
+  "item.minecraft.potion.effect.mining_fatigue_potion": "Potion of Exhaustion",
+  "item.minecraft.splash_potion.effect.mining_fatigue_potion": "Splash Potion of Exhaustion",
+  "item.minecraft.lingering_potion.effect.mining_fatigue_potion": "Lingering Potion of Exhaustion",
+
+  "item.minecraft.potion.effect.long_mining_fatigue_potion": "Potion of Exhaustion",
+  "item.minecraft.splash_potion.effect.long_mining_fatigue_potion": "Splash Potion of Exhaustion",
+  "item.minecraft.lingering_potion.effect.long_mining_fatigue_potion": "Lingering Potion of Exhaustion",
+
+  "item.minecraft.potion.effect.strong_mining_fatigue_potion": "Potion of Exhaustion",
+  "item.minecraft.splash_potion.effect.strong_mining_fatigue_potion": "Splash Potion of Exhaustion",
+  "item.minecraft.lingering_potion.effect.strong_mining_fatigue_potion": "Lingering Potion of Exhaustion",
+
+  "item.minecraft.potion.effect.resistance_potion": "Potion of Protection",
+  "item.minecraft.splash_potion.effect.resistance_potion": "Splash Potion of Protection",
+  "item.minecraft.lingering_potion.effect.resistance_potion": "Lingering Potion of Protection",
+
+  "item.minecraft.potion.effect.long_resistance_potion": "Potion of Protection",
+  "item.minecraft.splash_potion.effect.long_resistance_potion": "Splash Potion of Protection",
+  "item.minecraft.lingering_potion.effect.long_resistance_potion": "Lingering Potion of Protection",
+
+  "item.minecraft.potion.effect.strong_resistance_potion": "Potion of Protection",
+  "item.minecraft.splash_potion.effect.strong_resistance_potion": "Splash Potion of Protection",
+  "item.minecraft.lingering_potion.effect.strong_resistance_potion": "Lingering Potion of Protection",
+
+  "item.minecraft.potion.effect.blindness_potion": "Potion of Blindness",
+  "item.minecraft.splash_potion.effect.blindness_potion": "Splash Potion of Blindness",
+  "item.minecraft.lingering_potion.effect.blindness_potion": "Lingering Potion of Blindness",
+
+  "item.minecraft.potion.effect.long_blindness_potion": "Potion of Blindness",
+  "item.minecraft.splash_potion.effect.long_blindness_potion": "Splash Potion of Blindness",
+  "item.minecraft.lingering_potion.effect.long_blindness_potion": "Lingering Potion of Blindness",
+
+  "item.minecraft.potion.effect.dolphins_grace_potion": "Potion of Dolphin's Grace",
+  "item.minecraft.splash_potion.effect.dolphins_grace_potion": "Splash Potion of Dolphin's Grace",
+  "item.minecraft.lingering_potion.effect.dolphins_grace_potion": "Lingering Potion of Dolphin's Grace",
+
+  "item.minecraft.potion.effect.long_dolphins_grace_potion": "Potion of Dolphin's Grace",
+  "item.minecraft.splash_potion.effect.long_dolphins_grace_potion": "Splash Potion of Dolphin's Grace",
+  "item.minecraft.lingering_potion.effect.long_dolphins_grace_potion": "Lingering Potion of Dolphin's Grace",
+
+  "item.minecraft.potion.effect.nausea_potion": "Potion of Sickness",
+  "item.minecraft.splash_potion.effect.nausea_potion": "Splash Potion of Sickness",
+  "item.minecraft.lingering_potion.effect.nausea_potion": "Lingering Potion of Sickness",
+
+  "item.minecraft.potion.effect.long_nausea_potion": "Potion of Sickness",
+  "item.minecraft.splash_potion.effect.long_nausea_potion": "Splash Potion of Sickness",
+  "item.minecraft.lingering_potion.effect.long_nausea_potion": "Lingering Potion of Sickness",
+
+  "item.minecraft.potion.effect.saturation_potion": "Potion of Saturation",
+  "item.minecraft.splash_potion.effect.saturation_potion": "Splash Potion of Saturation",
+  "item.minecraft.lingering_potion.effect.saturation_potion": "Lingering Potion of Saturation",
+
+  "item.minecraft.potion.effect.strong_saturation_potion": "Potion of Saturation",
+  "item.minecraft.splash_potion.effect.strong_saturation_potion": "Splash Potion of Saturation",
+  "item.minecraft.lingering_potion.effect.strong_saturation_potion": "Lingering Potion of Saturation",
+
+  "item.minecraft.potion.effect.hunger_potion": "Potion of Hunger",
+  "item.minecraft.splash_potion.effect.hunger_potion": "Splash Potion of Hunger",
+  "item.minecraft.lingering_potion.effect.hunger_potion": "Lingering Potion of Hunger",
+
+  "item.minecraft.potion.effect.long_hunger_potion": "Potion of Hunger",
+  "item.minecraft.splash_potion.effect.long_hunger_potion": "Splash Potion of Hunger",
+  "item.minecraft.lingering_potion.effect.long_hunger_potion": "Lingering Potion of Hunger",
+
+  "item.minecraft.potion.effect.strong_hunger_potion": "Potion of Hunger",
+  "item.minecraft.splash_potion.effect.strong_hunger_potion": "Splash Potion of Hunger",
+  "item.minecraft.lingering_potion.effect.strong_hunger_potion": "Lingering Potion of Hunger",
+
+  "item.minecraft.potion.effect.bad_luck_potion": "Potion of Bad Luck",
+  "item.minecraft.splash_potion.effect.bad_luck_potion": "Splash Potion of Bad Luck",
+  "item.minecraft.lingering_potion.effect.bad_luck_potion": "Lingering Potion of Bad Luck",
+
+  "item.minecraft.potion.effect.levitation_potion": "Potion of Levitation",
+  "item.minecraft.splash_potion.effect.levitation_potion": "Splash Potion of Levitation",
+  "item.minecraft.lingering_potion.effect.levitation_potion": "Lingering Potion of Levitation",
+
+  "item.minecraft.potion.effect.long_levitation_potion": "Potion of Levitation",
+  "item.minecraft.splash_potion.effect.long_levitation_potion": "Splash Potion of Levitation",
+  "item.minecraft.lingering_potion.effect.long_levitation_potion": "Lingering Potion of Levitation",
+
+  "item.minecraft.potion.effect.glowing_potion": "Potion of Glowing",
+  "item.minecraft.splash_potion.effect.glowing_potion": "Splash Potion of Glowing",
+  "item.minecraft.lingering_potion.effect.glowing_potion": "Lingering Potion of Glowing",
+
+  "item.minecraft.potion.effect.long_glowing_potion": "Potion of Glowing",
+  "item.minecraft.splash_potion.effect.long_glowing_potion": "Splash Potion of Glowing",
+  "item.minecraft.lingering_potion.effect.long_glowing_potion": "Lingering Potion of Glowing",
+
+  "item.minecraft.potion.effect.darkness_potion": "Potion of Shadows",
+  "item.minecraft.splash_potion.effect.darkness_potion": "Splash Potion of Shadows",
+  "item.minecraft.lingering_potion.effect.darkness_potion": "Lingering Potion of Shadows",
+
+  "item.minecraft.potion.effect.long_darkness_potion": "Potion of Shadows",
+  "item.minecraft.splash_potion.effect.long_darkness_potion": "Splash Potion of Shadows",
+  "item.minecraft.lingering_potion.effect.long_darkness_potion": "Lingering Potion of Shadows",
+
+  "item.minecraft.tipped_arrow.effect.darkness_potion": "Arrow of Shadows",
+  "item.minecraft.tipped_arrow.effect.long_darkness_potion": "Arrow of Shadows",
+
+  "item.minecraft.tipped_arrow.effect.glowing_potion": "Arrow of Glowing",
+  "item.minecraft.tipped_arrow.effect.long_glowing_potion": "Arrow of Glowing",
+
+  "item.minecraft.tipped_arrow.effect.levitation_potion": "Arrow of Levitation",
+  "item.minecraft.tipped_arrow.effect.long_levitation_potion": "Arrow of Levitation",
+
+  "item.minecraft.tipped_arrow.effect.bad_luck_potion": "Arrow of Bad Luck",
+
+  "item.minecraft.tipped_arrow.effect.hunger_potion": "Arrow of Hunger",
+  "item.minecraft.tipped_arrow.effect.long_hunger_potion": "Arrow of Hunger",
+  "item.minecraft.tipped_arrow.effect.strong_hunger_potion": "Arrow of Hunger",
+
+  "item.minecraft.tipped_arrow.effect.saturation_potion": "Arrow of Saturation",
+  "item.minecraft.tipped_arrow.effect.strong_saturation_potion": "Arrow of Saturation",
+
+  "item.minecraft.tipped_arrow.effect.nausea_potion": "Arrow of Sickness",
+  "item.minecraft.tipped_arrow.effect.long_nausea_potion": "Arrow of Sickness",
+
+  "item.minecraft.tipped_arrow.effect.long_dolphins_grace_potion": "Arrow of Dolphin's Grace",
+  "item.minecraft.tipped_arrow.effect.dolphins_grace_potion": "Arrow of Dolphin's Grace",
+
+  "item.minecraft.tipped_arrow.effect.long_blindness_potion": "Arrow of Blindness",
+  "item.minecraft.tipped_arrow.effect.blindness_potion": "Arrow of Blindness",
+
+  "item.minecraft.tipped_arrow.effect.resistance_potion": "Arrow of Protection",
+  "item.minecraft.tipped_arrow.effect.long_resistance_potion": "Arrow of Protection",
+  "item.minecraft.tipped_arrow.effect.strong_resistance_potion": "Arrow of Protection",
+
+  "item.minecraft.tipped_arrow.effect.mining_fatigue_potion": "Arrow of Exhaustion",
+  "item.minecraft.tipped_arrow.effect.long_mining_fatigue_potion": "Arrow of Exhaustion",
+  "item.minecraft.tipped_arrow.effect.strong_mining_fatigue_potion": "Arrow of Exhaustion",
+
+  "item.minecraft.tipped_arrow.effect.haste_potion": "Arrow of Haste",
+  "item.minecraft.tipped_arrow.effect.long_haste_potion": "Arrow of Haste",
+  "item.minecraft.tipped_arrow.effect.strong_haste_potion": "Arrow of Haste",
+
   "item.minecraft.tipped_arrow.effect.strong_hp_boost_potion": "Arrow of Vitality",
   "item.minecraft.tipped_arrow.effect.hp_boost_potion": "Arrow of Vitality",
   "item.minecraft.tipped_arrow.effect.long_hp_boost_potion": "Arrow of Vitality",
+
+  "item.minecraft.tipped_arrow.effect.absorption_potion": "Arrow of Absorption",
+  "item.minecraft.tipped_arrow.effect.long_absorption_potion": "Arrow of Absorption",
+  "item.minecraft.tipped_arrow.effect.strong_absorption_potion": "Arrow of Absorption",
 
   "item.minecraft.tipped_arrow.effect.strong_wither_potion": "Arrow of Decay",
   "item.minecraft.tipped_arrow.effect.long_wither_potion": "Arrow of Decay",
@@ -33,5 +196,11 @@
 
   "item.threepotions.wither_bone": "Wither Skeleton Bone",
   "item.threepotions.red_crystals": "Red Prismarine Crystals",
-  "item.threepotions.clover": "Four Leaf Clover"
+  "item.threepotions.clover": "Four Leaf Clover",
+  "item.threepotions.bat_eye": "Bat Eye",
+  "item.threepotions.silverfish_skin": "Silverfish Skin",
+  "item.threepotions.ender_dragon_scale": "Ender Dragon Scale",
+  "item.threepotions.dolphin_fin": "Dolphin Fin",
+  "item.threepotions.polar_bear_liver": "Raw Polar Bear Liver",
+  "item.threepotions.cooked_polar_bear_liver": "Cooked Polar Bear Liver"
 }

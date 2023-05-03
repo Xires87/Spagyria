@@ -1,3 +1,6 @@
-# Three Potions
+# Spagyria
 
-This mod adds 3 items used for brewing Luck, Wither and Health Boost potions
+Adds potions (and ingredients for them) for most vanilla status effects, that are unobtainable
+through brewing.
+
+# [CurseForge](https://www.curseforge.com/minecraft/mc-mods/spagyria)
