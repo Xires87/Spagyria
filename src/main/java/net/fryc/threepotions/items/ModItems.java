@@ -1,16 +1,13 @@
 package net.fryc.threepotions.items;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fryc.threepotions.ThreePotions;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import net.minecraft.util.registry.Registry;
 
 public class ModItems {
 
@@ -43,25 +40,9 @@ public class ModItems {
 
 
     private static Item registerItem(String name, Item item){
-        return Registry.register(Registries.ITEM, new Identifier(ThreePotions.MOD_ID, name), item);
+        return Registry.register(Registry.ITEM, new Identifier(ThreePotions.MOD_ID, name), item);
     }
     public static void registerModItems(){
-        //creative
-        ItemGroup SPAGYRIA = FabricItemGroup.builder(new Identifier(ThreePotions.MOD_ID, "spagyria_item_group"))
-                .displayName(Text.literal("Spagyria"))
-                .icon(() -> new ItemStack(ModItems.CLOVER))
-                .entries((enabledFeatures, entries) -> {
-                    entries.add(ModItems.CLOVER);
-                    entries.add(ModItems.WITHER_BONE);
-                    entries.add(ModItems.RED_CRYSTALS);
-                    entries.add(ModItems.BAT_EYE);
-                    entries.add(ModItems.DOLPHIN_FIN);
-                    entries.add(ModItems.POLAR_BEAR_LIVER);
-                    entries.add(ModItems.COOKED_POLAR_BEAR_LIVER);
-                    entries.add(ModItems.SILVERFISH_SKIN);
-                    entries.add(ModItems.ENDER_DRAGON_SCALE);
-                })
-                .build();
     }
 
 }
