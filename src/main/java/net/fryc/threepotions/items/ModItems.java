@@ -8,11 +8,16 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
 public class ModItems {
+
+    //Item Group
+    public static final RegistryKey<ItemGroup> SPAGYRIA = RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(ThreePotions.MOD_ID, "spagyria_item_group"));
 
     public static final Item WITHER_BONE = registerItem("wither_bone" ,
             new Item(new FabricItemSettings().maxCount(64).fireproof()));
@@ -46,10 +51,10 @@ public class ModItems {
         return Registry.register(Registries.ITEM, new Identifier(ThreePotions.MOD_ID, name), item);
     }
     public static void registerModItems(){
-        //creative
-        ItemGroup SPAGYRIA = FabricItemGroup.builder(new Identifier(ThreePotions.MOD_ID, "spagyria_item_group"))
-                .displayName(Text.literal("Spagyria"))
+        //item group
+        Registry.register(Registries.ITEM_GROUP, SPAGYRIA, FabricItemGroup.builder()
                 .icon(() -> new ItemStack(ModItems.CLOVER))
+                .displayName(Text.literal("Spagyria"))
                 .entries((enabledFeatures, entries) -> {
                     entries.add(ModItems.CLOVER);
                     entries.add(ModItems.WITHER_BONE);
@@ -61,7 +66,7 @@ public class ModItems {
                     entries.add(ModItems.SILVERFISH_SKIN);
                     entries.add(ModItems.ENDER_DRAGON_SCALE);
                 })
-                .build();
+                .build());
     }
 
 }
