@@ -86,7 +86,7 @@ public class ModLootTables {
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build())
                         .apply(FurnaceSmeltLootFunction.builder()
                                 .conditionally(EntityPropertiesLootCondition.builder(LootContext.EntityTarget.THIS, EntityPredicate
-                                        .Builder.create().flags(EntityFlagsPredicate.Builder.create().onFire(true).build()))).build());
+                                        .Builder.create().flags(EntityFlagsPredicate.Builder.create().onFire(true)))).build());
                 tableBuilder.pool(poolBuilder.build());
             }
         });
