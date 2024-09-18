@@ -1,6 +1,6 @@
 package net.fryc.threepotions.loot;
 
-import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.fryc.threepotions.items.ModItems;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.*;
@@ -15,25 +15,25 @@ import net.minecraft.util.Identifier;
 
 public class ModLootTables {
     private static final Identifier GRASS_BLOCK
-            = new Identifier("minecraft", "blocks/grass");
+            = Identifier.ofVanilla("blocks/grass");
     private static final Identifier WITHER_SKELETON
-            = new Identifier("minecraft", "entities/wither_skeleton");
+            = Identifier.ofVanilla("entities/wither_skeleton");
     private static final Identifier GUARDIAN
-            = new Identifier("minecraft", "entities/guardian");
+            = Identifier.ofVanilla("entities/guardian");
     private static final Identifier ELDER_GUARDIAN
-            = new Identifier("minecraft", "entities/elder_guardian");
+            = Identifier.ofVanilla("entities/elder_guardian");
     private static final Identifier POLAR_BEAR
-            = new Identifier("minecraft", "entities/polar_bear");
+            = Identifier.ofVanilla("entities/polar_bear");
     private static final Identifier SILVERFISH
-            = new Identifier("minecraft", "entities/silverfish");
+            = Identifier.ofVanilla("entities/silverfish");
     private static final Identifier BAT
-            = new Identifier("minecraft", "entities/bat");
+            = Identifier.ofVanilla("entities/bat");
     private static final Identifier DOLPHIN
-            = new Identifier("minecraft", "entities/dolphin");
+            = Identifier.ofVanilla("entities/dolphin");
 
     public static void modifyLoot(){
-        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-            if(GRASS_BLOCK.equals(id)) {
+        LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
+            if(GRASS_BLOCK.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.003f))
@@ -43,31 +43,31 @@ public class ModLootTables {
             }
         });
 
-        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-            if(WITHER_SKELETON.equals(id)) {
+        LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
+            if(WITHER_SKELETON.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceWithLootingLootCondition.builder(0.10f, 0.07f))
+                        .conditionally(RandomChanceWithEnchantedBonusLootCondition.builder(registries, 0.10f, 0.07f))
                         .with(ItemEntry.builder(ModItems.WITHER_BONE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build())
-                        .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0.0f, 1.0f)).withLimit(2).build());
+                        .apply(EnchantedCountIncreaseLootFunction.builder(registries, UniformLootNumberProvider.create(0.0f, 1.0f)).withLimit(2).build());
                 tableBuilder.pool(poolBuilder.build());
             }
         });
 
-        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-            if(GUARDIAN.equals(id)) {
+        LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
+            if(GUARDIAN.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceWithLootingLootCondition.builder(0.025f, 0.01f))
+                        .conditionally(RandomChanceWithEnchantedBonusLootCondition.builder(registries, 0.025f, 0.01f))
                         .with(ItemEntry.builder(ModItems.RED_CRYSTALS))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }
         });
 
-        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-            if(ELDER_GUARDIAN.equals(id)) {
+        LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
+            if(ELDER_GUARDIAN.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(1.0f))
@@ -77,11 +77,11 @@ public class ModLootTables {
             }
         });
 
-        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-            if(POLAR_BEAR.equals(id)) {
+        LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
+            if(POLAR_BEAR.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceWithLootingLootCondition.builder(0.63f, 0.12f))
+                        .conditionally(RandomChanceWithEnchantedBonusLootCondition.builder(registries, 0.63f, 0.12f))
                         .with(ItemEntry.builder(ModItems.POLAR_BEAR_LIVER))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build())
                         .apply(FurnaceSmeltLootFunction.builder()
@@ -91,35 +91,35 @@ public class ModLootTables {
             }
         });
 
-        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-            if(SILVERFISH.equals(id)) {
+        LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
+            if(SILVERFISH.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceWithLootingLootCondition.builder(0.14f, 0.1f))
+                        .conditionally(RandomChanceWithEnchantedBonusLootCondition.builder(registries, 0.14f, 0.1f))
                         .with(ItemEntry.builder(ModItems.SILVERFISH_SKIN))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build())
-                        .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0.0f, 1.0f)).withLimit(2).build());
+                        .apply(EnchantedCountIncreaseLootFunction.builder(registries, UniformLootNumberProvider.create(0.0f, 1.0f)).withLimit(2).build());
                 tableBuilder.pool(poolBuilder.build());
             }
         });
 
-        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-            if(BAT.equals(id)) {
+        LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
+            if(BAT.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceWithLootingLootCondition.builder(0.30f, 0.13f))
+                        .conditionally(RandomChanceWithEnchantedBonusLootCondition.builder(registries, 0.30f, 0.13f))
                         .with(ItemEntry.builder(ModItems.BAT_EYE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build())
-                        .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0.0f, 1.0f)).withLimit(2).build());
+                        .apply(EnchantedCountIncreaseLootFunction.builder(registries, UniformLootNumberProvider.create(0.0f, 1.0f)).withLimit(2).build());
                 tableBuilder.pool(poolBuilder.build());
             }
         });
 
-        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-            if(DOLPHIN.equals(id)) {
+        LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
+            if(DOLPHIN.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceWithLootingLootCondition.builder(0.22f, 0.15f))
+                        .conditionally(RandomChanceWithEnchantedBonusLootCondition.builder(registries, 0.22f, 0.15f))
                         .with(ItemEntry.builder(ModItems.DOLPHIN_FIN))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());

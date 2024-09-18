@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "threepotions:polar_bear_liver"
   },
-  "result": "threepotions:cooked_polar_bear_liver"
+  "result": {
+    "id": "threepotions:cooked_polar_bear_liver"
+  }
 }

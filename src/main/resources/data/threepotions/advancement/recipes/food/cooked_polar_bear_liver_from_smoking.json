@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_liver": {
+      "conditions": {
+        "items": [
+          {
+            "items": "threepotions:polar_bear_liver"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "threepotions:cooked_polar_bear_liver_from_smoking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_liver"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "threepotions:cooked_polar_bear_liver_from_smoking"
+    ]
+  }
+}

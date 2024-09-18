@@ -1,5 +1,6 @@
 package net.fryc.threepotions.potions;
 
+import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.fryc.threepotions.ThreePotions;
 import net.fryc.threepotions.items.ModItems;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -7,65 +8,65 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.Potions;
-import net.minecraft.recipe.BrewingRecipeRegistry;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 
 public class ModPotions {
-    public static Potion WITHER_POTION;
-    public static Potion LONG_WITHER_POTION;
-    public static Potion STRONG_WITHER_POTION;
+    public static RegistryEntry<Potion> WITHER_POTION;
+    public static RegistryEntry<Potion> LONG_WITHER_POTION;
+    public static RegistryEntry<Potion> STRONG_WITHER_POTION;
 
-    public static Potion HEALTH_BOOST_POTION;
-    public static Potion LONG_HEALTH_BOOST_POTION;
-    public static Potion STRONG_HEALTH_BOOST_POTION;
+    public static RegistryEntry<Potion> HEALTH_BOOST_POTION;
+    public static RegistryEntry<Potion> LONG_HEALTH_BOOST_POTION;
+    public static RegistryEntry<Potion> STRONG_HEALTH_BOOST_POTION;
 
-    public static Potion ABSORPTION_POTION;
-    public static Potion LONG_ABSORPTION_POTION;
-    public static Potion STRONG_ABSORPTION_POTION;
+    public static RegistryEntry<Potion> ABSORPTION_POTION;
+    public static RegistryEntry<Potion> LONG_ABSORPTION_POTION;
+    public static RegistryEntry<Potion> STRONG_ABSORPTION_POTION;
 
-    public static Potion HASTE_POTION;
-    public static Potion LONG_HASTE_POTION;
-    public static Potion STRONG_HASTE_POTION;
+    public static RegistryEntry<Potion> HASTE_POTION;
+    public static RegistryEntry<Potion> LONG_HASTE_POTION;
+    public static RegistryEntry<Potion> STRONG_HASTE_POTION;
 
-    public static Potion MINING_FATIGUE_POTION;
-    public static Potion LONG_MINING_FATIGUE_POTION;
-    public static Potion STRONG_MINING_FATIGUE_POTION;
+    public static RegistryEntry<Potion> MINING_FATIGUE_POTION;
+    public static RegistryEntry<Potion> LONG_MINING_FATIGUE_POTION;
+    public static RegistryEntry<Potion> STRONG_MINING_FATIGUE_POTION;
 
-    public static Potion RESISTANCE_POTION;
-    public static Potion LONG_RESISTANCE_POTION;
-    public static Potion STRONG_RESISTANCE_POTION;
+    public static RegistryEntry<Potion> RESISTANCE_POTION;
+    public static RegistryEntry<Potion> LONG_RESISTANCE_POTION;
+    public static RegistryEntry<Potion> STRONG_RESISTANCE_POTION;
 
-    public static Potion BLINDNESS_POTION;
-    public static Potion LONG_BLINDNESS_POTION;
+    public static RegistryEntry<Potion> BLINDNESS_POTION;
+    public static RegistryEntry<Potion> LONG_BLINDNESS_POTION;
 
-    public static Potion DOLPHINS_GRACE_POTION;
-    public static Potion LONG_DOLPHINS_GRACE_POTION;
+    public static RegistryEntry<Potion> DOLPHINS_GRACE_POTION;
+    public static RegistryEntry<Potion> LONG_DOLPHINS_GRACE_POTION;
 
-    public static Potion NAUSEA_POTION;
-    public static Potion LONG_NAUSEA_POTION;
+    public static RegistryEntry<Potion> NAUSEA_POTION;
+    public static RegistryEntry<Potion> LONG_NAUSEA_POTION;
 
-    public static Potion SATURATION_POTION;
-    public static Potion STRONG_SATURATION_POTION;
+    public static RegistryEntry<Potion> SATURATION_POTION;
+    public static RegistryEntry<Potion> STRONG_SATURATION_POTION;
 
-    public static Potion HUNGER_POTION;
-    public static Potion LONG_HUNGER_POTION;
-    public static Potion STRONG_HUNGER_POTION;
+    public static RegistryEntry<Potion> HUNGER_POTION;
+    public static RegistryEntry<Potion> LONG_HUNGER_POTION;
+    public static RegistryEntry<Potion> STRONG_HUNGER_POTION;
 
-    public static Potion BAD_LUCK_POTION;
+    public static RegistryEntry<Potion> BAD_LUCK_POTION;
 
-    public static Potion GLOWING_POTION;
-    public static Potion LONG_GLOWING_POTION;
+    public static RegistryEntry<Potion> GLOWING_POTION;
+    public static RegistryEntry<Potion> LONG_GLOWING_POTION;
 
-    public static Potion DARKNESS_POTION;
-    public static Potion LONG_DARKNESS_POTION;
+    public static RegistryEntry<Potion> DARKNESS_POTION;
+    public static RegistryEntry<Potion> LONG_DARKNESS_POTION;
 
-    public static Potion LEVITATION_POTION;
-    public static Potion LONG_LEVITATION_POTION;
+    public static RegistryEntry<Potion> LEVITATION_POTION;
+    public static RegistryEntry<Potion> LONG_LEVITATION_POTION;
 
-    public static Potion registerPotion(String name, Potion potion) {
-        return Registry.register(Registries.POTION, new Identifier(ThreePotions.MOD_ID, name),
+    public static RegistryEntry<Potion> registerPotion(String name, Potion potion) {
+        return Registry.registerReference(Registries.POTION, Identifier.of(ThreePotions.MOD_ID, name),
                 potion);
     }
 
@@ -125,171 +126,171 @@ public class ModPotions {
     }
 
     private static void registerPotionRecipes() {
-        //luck
-        BrewingRecipeRegistry.registerPotionRecipe(Potions.AWKWARD, ModItems.CLOVER,
-                Potions.LUCK);
+        FabricBrewingRecipeRegistryBuilder.BUILD.register((builder) -> {
+            //luck
+            builder.registerPotionRecipe(Potions.AWKWARD, ModItems.CLOVER,
+                    Potions.LUCK);
+            builder.registerPotionRecipe(Potions.LUCK, Items.FERMENTED_SPIDER_EYE,
+                    ModPotions.BAD_LUCK_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(Potions.LUCK, Items.FERMENTED_SPIDER_EYE,
-                ModPotions.BAD_LUCK_POTION);
+            //wither
+            builder.registerPotionRecipe(Potions.AWKWARD, ModItems.WITHER_BONE,
+                    ModPotions.WITHER_POTION);
 
-        //wither
-        BrewingRecipeRegistry.registerPotionRecipe(Potions.AWKWARD, ModItems.WITHER_BONE,
-                ModPotions.WITHER_POTION);
+            builder.registerPotionRecipe(ModPotions.WITHER_POTION, Items.REDSTONE,
+                    ModPotions.LONG_WITHER_POTION);
+            builder.registerPotionRecipe(ModPotions.STRONG_WITHER_POTION, Items.REDSTONE,
+                    ModPotions.LONG_WITHER_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.WITHER_POTION, Items.REDSTONE,
-                ModPotions.LONG_WITHER_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.STRONG_WITHER_POTION, Items.REDSTONE,
-                ModPotions.LONG_WITHER_POTION);
+            builder.registerPotionRecipe(ModPotions.WITHER_POTION, Items.GLOWSTONE_DUST,
+                    ModPotions.STRONG_WITHER_POTION);
+            builder.registerPotionRecipe(ModPotions.LONG_WITHER_POTION, Items.GLOWSTONE_DUST,
+                    ModPotions.STRONG_WITHER_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.WITHER_POTION, Items.GLOWSTONE_DUST,
-                ModPotions.STRONG_WITHER_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.LONG_WITHER_POTION, Items.GLOWSTONE_DUST,
-                ModPotions.STRONG_WITHER_POTION);
+            //health boost
+            builder.registerPotionRecipe(Potions.AWKWARD, ModItems.RED_CRYSTALS,
+                    ModPotions.HEALTH_BOOST_POTION);
 
-        //health boost
-        BrewingRecipeRegistry.registerPotionRecipe(Potions.AWKWARD, ModItems.RED_CRYSTALS,
-                ModPotions.HEALTH_BOOST_POTION);
+            builder.registerPotionRecipe(ModPotions.HEALTH_BOOST_POTION, Items.REDSTONE,
+                    ModPotions.LONG_HEALTH_BOOST_POTION);
+            builder.registerPotionRecipe(ModPotions.STRONG_HEALTH_BOOST_POTION, Items.REDSTONE,
+                    ModPotions.LONG_HEALTH_BOOST_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.HEALTH_BOOST_POTION, Items.REDSTONE,
-                ModPotions.LONG_HEALTH_BOOST_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.STRONG_HEALTH_BOOST_POTION, Items.REDSTONE,
-                ModPotions.LONG_HEALTH_BOOST_POTION);
+            builder.registerPotionRecipe(ModPotions.HEALTH_BOOST_POTION, Items.GLOWSTONE_DUST,
+                    ModPotions.STRONG_HEALTH_BOOST_POTION);
+            builder.registerPotionRecipe(ModPotions.LONG_HEALTH_BOOST_POTION, Items.GLOWSTONE_DUST,
+                    ModPotions.STRONG_HEALTH_BOOST_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.HEALTH_BOOST_POTION, Items.GLOWSTONE_DUST,
-                ModPotions.STRONG_HEALTH_BOOST_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.LONG_HEALTH_BOOST_POTION, Items.GLOWSTONE_DUST,
-                ModPotions.STRONG_HEALTH_BOOST_POTION);
+            //haste
+            builder.registerPotionRecipe(Potions.AWKWARD, ModItems.SILVERFISH_SKIN,
+                    ModPotions.HASTE_POTION);
+            builder.registerPotionRecipe(ModPotions.MINING_FATIGUE_POTION, Items.FERMENTED_SPIDER_EYE,
+                    ModPotions.HASTE_POTION);
+            builder.registerPotionRecipe(ModPotions.STRONG_MINING_FATIGUE_POTION, Items.FERMENTED_SPIDER_EYE,
+                    ModPotions.HASTE_POTION);
+            builder.registerPotionRecipe(ModPotions.LONG_MINING_FATIGUE_POTION, Items.FERMENTED_SPIDER_EYE,
+                    ModPotions.HASTE_POTION);
 
-        //haste
-        BrewingRecipeRegistry.registerPotionRecipe(Potions.AWKWARD, ModItems.SILVERFISH_SKIN,
-                ModPotions.HASTE_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.MINING_FATIGUE_POTION, Items.FERMENTED_SPIDER_EYE,
-                ModPotions.HASTE_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.STRONG_MINING_FATIGUE_POTION, Items.FERMENTED_SPIDER_EYE,
-                ModPotions.HASTE_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.LONG_MINING_FATIGUE_POTION, Items.FERMENTED_SPIDER_EYE,
-                ModPotions.HASTE_POTION);
+            builder.registerPotionRecipe(ModPotions.HASTE_POTION, Items.REDSTONE,
+                    ModPotions.LONG_HASTE_POTION);
+            builder.registerPotionRecipe(ModPotions.STRONG_HASTE_POTION, Items.REDSTONE,
+                    ModPotions.LONG_HASTE_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.HASTE_POTION, Items.REDSTONE,
-                ModPotions.LONG_HASTE_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.STRONG_HASTE_POTION, Items.REDSTONE,
-                ModPotions.LONG_HASTE_POTION);
+            builder.registerPotionRecipe(ModPotions.HASTE_POTION, Items.GLOWSTONE_DUST,
+                    ModPotions.STRONG_HASTE_POTION);
+            builder.registerPotionRecipe(ModPotions.LONG_HASTE_POTION, Items.GLOWSTONE_DUST,
+                    ModPotions.STRONG_HASTE_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.HASTE_POTION, Items.GLOWSTONE_DUST,
-                ModPotions.STRONG_HASTE_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.LONG_HASTE_POTION, Items.GLOWSTONE_DUST,
-                ModPotions.STRONG_HASTE_POTION);
+            //fatigue
+            builder.registerPotionRecipe(ModPotions.HASTE_POTION, Items.FERMENTED_SPIDER_EYE,
+                    ModPotions.MINING_FATIGUE_POTION);
+            builder.registerPotionRecipe(ModPotions.STRONG_HASTE_POTION, Items.FERMENTED_SPIDER_EYE,
+                    ModPotions.MINING_FATIGUE_POTION);
+            builder.registerPotionRecipe(ModPotions.LONG_HASTE_POTION, Items.FERMENTED_SPIDER_EYE,
+                    ModPotions.MINING_FATIGUE_POTION);
 
-        //fatigue
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.HASTE_POTION, Items.FERMENTED_SPIDER_EYE,
-                ModPotions.MINING_FATIGUE_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.STRONG_HASTE_POTION, Items.FERMENTED_SPIDER_EYE,
-                ModPotions.MINING_FATIGUE_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.LONG_HASTE_POTION, Items.FERMENTED_SPIDER_EYE,
-                ModPotions.MINING_FATIGUE_POTION);
+            builder.registerPotionRecipe(ModPotions.MINING_FATIGUE_POTION, Items.REDSTONE,
+                    ModPotions.LONG_MINING_FATIGUE_POTION);
+            builder.registerPotionRecipe(ModPotions.STRONG_MINING_FATIGUE_POTION, Items.REDSTONE,
+                    ModPotions.LONG_MINING_FATIGUE_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.MINING_FATIGUE_POTION, Items.REDSTONE,
-                ModPotions.LONG_MINING_FATIGUE_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.STRONG_MINING_FATIGUE_POTION, Items.REDSTONE,
-                ModPotions.LONG_MINING_FATIGUE_POTION);
+            builder.registerPotionRecipe(ModPotions.MINING_FATIGUE_POTION, Items.GLOWSTONE_DUST,
+                    ModPotions.STRONG_MINING_FATIGUE_POTION);
+            builder.registerPotionRecipe(ModPotions.LONG_MINING_FATIGUE_POTION, Items.GLOWSTONE_DUST,
+                    ModPotions.STRONG_MINING_FATIGUE_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.MINING_FATIGUE_POTION, Items.GLOWSTONE_DUST,
-                ModPotions.STRONG_MINING_FATIGUE_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.LONG_MINING_FATIGUE_POTION, Items.GLOWSTONE_DUST,
-                ModPotions.STRONG_MINING_FATIGUE_POTION);
+            //absorption
+            builder.registerPotionRecipe(Potions.AWKWARD, Items.GOLDEN_APPLE,
+                    ModPotions.ABSORPTION_POTION);
 
-        //absorption
-        BrewingRecipeRegistry.registerPotionRecipe(Potions.AWKWARD, Items.GOLDEN_APPLE,
-                ModPotions.ABSORPTION_POTION);
+            builder.registerPotionRecipe(ModPotions.ABSORPTION_POTION, Items.REDSTONE,
+                    ModPotions.LONG_ABSORPTION_POTION);
+            builder.registerPotionRecipe(ModPotions.STRONG_ABSORPTION_POTION, Items.REDSTONE,
+                    ModPotions.LONG_ABSORPTION_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.ABSORPTION_POTION, Items.REDSTONE,
-                ModPotions.LONG_ABSORPTION_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.STRONG_ABSORPTION_POTION, Items.REDSTONE,
-                ModPotions.LONG_ABSORPTION_POTION);
+            builder.registerPotionRecipe(ModPotions.ABSORPTION_POTION, Items.GLOWSTONE_DUST,
+                    ModPotions.STRONG_ABSORPTION_POTION);
+            builder.registerPotionRecipe(ModPotions.LONG_ABSORPTION_POTION, Items.GLOWSTONE_DUST,
+                    ModPotions.STRONG_ABSORPTION_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.ABSORPTION_POTION, Items.GLOWSTONE_DUST,
-                ModPotions.STRONG_ABSORPTION_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.LONG_ABSORPTION_POTION, Items.GLOWSTONE_DUST,
-                ModPotions.STRONG_ABSORPTION_POTION);
+            //resistance
+            builder.registerPotionRecipe(Potions.AWKWARD, ModItems.ENDER_DRAGON_SCALE,
+                    ModPotions.RESISTANCE_POTION);
 
-        //resistance
-        BrewingRecipeRegistry.registerPotionRecipe(Potions.AWKWARD, ModItems.ENDER_DRAGON_SCALE,
-                ModPotions.RESISTANCE_POTION);
+            builder.registerPotionRecipe(ModPotions.RESISTANCE_POTION, Items.REDSTONE,
+                    ModPotions.LONG_RESISTANCE_POTION);
+            builder.registerPotionRecipe(ModPotions.STRONG_RESISTANCE_POTION, Items.REDSTONE,
+                    ModPotions.LONG_RESISTANCE_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.RESISTANCE_POTION, Items.REDSTONE,
-                ModPotions.LONG_RESISTANCE_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.STRONG_RESISTANCE_POTION, Items.REDSTONE,
-                ModPotions.LONG_RESISTANCE_POTION);
+            builder.registerPotionRecipe(ModPotions.RESISTANCE_POTION, Items.GLOWSTONE_DUST,
+                    ModPotions.STRONG_RESISTANCE_POTION);
+            builder.registerPotionRecipe(ModPotions.LONG_RESISTANCE_POTION, Items.GLOWSTONE_DUST,
+                    ModPotions.STRONG_RESISTANCE_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.RESISTANCE_POTION, Items.GLOWSTONE_DUST,
-                ModPotions.STRONG_RESISTANCE_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.LONG_RESISTANCE_POTION, Items.GLOWSTONE_DUST,
-                ModPotions.STRONG_RESISTANCE_POTION);
+            //blindness
+            builder.registerPotionRecipe(Potions.AWKWARD, ModItems.BAT_EYE,
+                    ModPotions.BLINDNESS_POTION);
 
-        //blindness
-        BrewingRecipeRegistry.registerPotionRecipe(Potions.AWKWARD, ModItems.BAT_EYE,
-                ModPotions.BLINDNESS_POTION);
+            builder.registerPotionRecipe(ModPotions.BLINDNESS_POTION, Items.REDSTONE,
+                    ModPotions.LONG_BLINDNESS_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.BLINDNESS_POTION, Items.REDSTONE,
-                ModPotions.LONG_BLINDNESS_POTION);
+            //dolphins grace
+            builder.registerPotionRecipe(Potions.AWKWARD, ModItems.DOLPHIN_FIN,
+                    ModPotions.DOLPHINS_GRACE_POTION);
 
-        //dolphins grace
-        BrewingRecipeRegistry.registerPotionRecipe(Potions.AWKWARD, ModItems.DOLPHIN_FIN,
-                ModPotions.DOLPHINS_GRACE_POTION);
+            builder.registerPotionRecipe(ModPotions.DOLPHINS_GRACE_POTION, Items.REDSTONE,
+                    ModPotions.LONG_DOLPHINS_GRACE_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.DOLPHINS_GRACE_POTION, Items.REDSTONE,
-                ModPotions.LONG_DOLPHINS_GRACE_POTION);
+            //nausea
+            builder.registerPotionRecipe(Potions.AWKWARD, Items.POISONOUS_POTATO,
+                    ModPotions.NAUSEA_POTION);
 
-        //nausea
-        BrewingRecipeRegistry.registerPotionRecipe(Potions.AWKWARD, Items.POISONOUS_POTATO,
-                ModPotions.NAUSEA_POTION);
+            builder.registerPotionRecipe(ModPotions.NAUSEA_POTION, Items.REDSTONE,
+                    ModPotions.LONG_NAUSEA_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.NAUSEA_POTION, Items.REDSTONE,
-                ModPotions.LONG_NAUSEA_POTION);
+            //saturation
+            builder.registerPotionRecipe(Potions.AWKWARD, ModItems.POLAR_BEAR_LIVER,
+                    ModPotions.SATURATION_POTION);
 
-        //saturation
-        BrewingRecipeRegistry.registerPotionRecipe(Potions.AWKWARD, ModItems.POLAR_BEAR_LIVER,
-                ModPotions.SATURATION_POTION);
+            builder.registerPotionRecipe(ModPotions.SATURATION_POTION, Items.GLOWSTONE_DUST,
+                    ModPotions.STRONG_SATURATION_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.SATURATION_POTION, Items.GLOWSTONE_DUST,
-                ModPotions.STRONG_SATURATION_POTION);
+            //hunger
+            builder.registerPotionRecipe(ModPotions.SATURATION_POTION, Items.FERMENTED_SPIDER_EYE,
+                    ModPotions.HUNGER_POTION);
+            builder.registerPotionRecipe(ModPotions.STRONG_SATURATION_POTION, Items.FERMENTED_SPIDER_EYE,
+                    ModPotions.HUNGER_POTION);
 
-        //hunger
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.SATURATION_POTION, Items.FERMENTED_SPIDER_EYE,
-                ModPotions.HUNGER_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.STRONG_SATURATION_POTION, Items.FERMENTED_SPIDER_EYE,
-                ModPotions.HUNGER_POTION);
+            builder.registerPotionRecipe(ModPotions.HUNGER_POTION, Items.REDSTONE,
+                    ModPotions.LONG_HUNGER_POTION);
+            builder.registerPotionRecipe(ModPotions.STRONG_HUNGER_POTION, Items.REDSTONE,
+                    ModPotions.LONG_HUNGER_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.HUNGER_POTION, Items.REDSTONE,
-                ModPotions.LONG_HUNGER_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.STRONG_HUNGER_POTION, Items.REDSTONE,
-                ModPotions.LONG_HUNGER_POTION);
+            builder.registerPotionRecipe(ModPotions.HUNGER_POTION, Items.GLOWSTONE_DUST,
+                    ModPotions.STRONG_HUNGER_POTION);
+            builder.registerPotionRecipe(ModPotions.LONG_HUNGER_POTION, Items.GLOWSTONE_DUST,
+                    ModPotions.STRONG_HUNGER_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.HUNGER_POTION, Items.GLOWSTONE_DUST,
-                ModPotions.STRONG_HUNGER_POTION);
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.LONG_HUNGER_POTION, Items.GLOWSTONE_DUST,
-                ModPotions.STRONG_HUNGER_POTION);
+            //glowing
+            builder.registerPotionRecipe(Potions.AWKWARD, Items.GLOW_INK_SAC,
+                    ModPotions.GLOWING_POTION);
 
-        //glowing
-        BrewingRecipeRegistry.registerPotionRecipe(Potions.AWKWARD, Items.GLOW_INK_SAC,
-                ModPotions.GLOWING_POTION);
+            builder.registerPotionRecipe(ModPotions.GLOWING_POTION, Items.REDSTONE,
+                    ModPotions.LONG_GLOWING_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.GLOWING_POTION, Items.REDSTONE,
-                ModPotions.LONG_GLOWING_POTION);
+            //darkness
+            builder.registerPotionRecipe(ModPotions.GLOWING_POTION, Items.FERMENTED_SPIDER_EYE,
+                    ModPotions.DARKNESS_POTION);
 
-        //darkness
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.GLOWING_POTION, Items.FERMENTED_SPIDER_EYE,
-                ModPotions.DARKNESS_POTION);
+            builder.registerPotionRecipe(ModPotions.DARKNESS_POTION, Items.REDSTONE,
+                    ModPotions.LONG_DARKNESS_POTION);
 
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.DARKNESS_POTION, Items.REDSTONE,
-                ModPotions.LONG_DARKNESS_POTION);
+            //levitation
+            builder.registerPotionRecipe(Potions.SLOW_FALLING, Items.FERMENTED_SPIDER_EYE,
+                    ModPotions.LEVITATION_POTION);
 
-        //levitation
-        BrewingRecipeRegistry.registerPotionRecipe(Potions.SLOW_FALLING, Items.FERMENTED_SPIDER_EYE,
-                ModPotions.LEVITATION_POTION);
-
-        BrewingRecipeRegistry.registerPotionRecipe(ModPotions.LEVITATION_POTION, Items.REDSTONE,
-                ModPotions.LONG_LEVITATION_POTION);
-
+            builder.registerPotionRecipe(ModPotions.LEVITATION_POTION, Items.REDSTONE,
+                    ModPotions.LONG_LEVITATION_POTION);
+        });
     }
 }
